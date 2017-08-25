@@ -1,0 +1,9 @@
+table.schemaName = "PROJECTCORE";
+table.tableType = COLUMNSTORE;
+table.columns = [
+	{name = "MATERIAL_NUM"; sqlType = NVARCHAR; nullable = false; length = 18;},
+	{name = "DATE"; sqlType = DATE; nullable = false;},
+	{name = "QUANTITY"; sqlType = INTEGER;},
+	{name = "DAY_TYPE"; sqlType = NVARCHAR; length = 18;}
+];
+table.primaryKey.pkcolumns = ["MATERIAL_NUM","DATE"];

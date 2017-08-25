@@ -1,0 +1,12 @@
+table.schemaName = "PROJECTCORE";
+table.tableType = COLUMNSTORE;
+table.columns = [
+	{name = "PURCHASE_ORDER"; sqlType = NVARCHAR; nullable = false; length = 18;},
+	{name = "MATERIAL_NUMBER"; sqlType = NVARCHAR; nullable = false; length = 18;},
+	{name = "MATERIAL_DESC"; sqlType = NVARCHAR; nullable = false; length = 40;},
+	{name = "VENDOR"; sqlType = NVARCHAR; nullable = false; length = 40;},
+	{name = "QUANTITY"; sqlType = INTEGER;},
+	{name = "DATE"; sqlType = DATE; nullable = false;},
+	{name = "DELIVERY_DATE"; sqlType = DATE; nullable = false;}
+];
+table.primaryKey.pkcolumns = ["PURCHASE_ORDER"];
